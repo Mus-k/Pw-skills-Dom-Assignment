@@ -5,7 +5,11 @@ let counter = 0;
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.classList.contains("increase")) {
-      counter++;
+      if (counter < 10) {
+        counter++;
+      } else {
+        alert("10+ number is not allowed");
+      }
     } else if (btn.classList.contains("decrease")) {
       if (counter > 0) {
         counter--;

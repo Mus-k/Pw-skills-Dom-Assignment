@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event Listner</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .button {
+      background-color: #0a56c8;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .button:hover,
+    .button:focus {
+      background-color: #152366;
+    }
+    .value {
+      color: blueviolet;
+      font-size: 22px;
+    }
+    .mouseover {
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .container div{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+  </style>
+ 
+  <body>
+   
+      <div class="container">
+        <div>
+          <h1 class="onclick">Onclick event</h1>
+          <button class="button click">click me</button>
+        </div>
+        <div>
+          <h1 class="dbText">doubleclick me event</h1>
+          <p class="value"></p>
+        </div>
+        <div>
+          <div class="mouseover"><h2>Mouseover and mouseout</h2></div>
+        </div>
+        <div class="">
+          
+            <h2>keypress</h2>
+          
+          <input type="text" class="input" />
+          <h3 class="pressed"></h3>
+        </div>
+        <div>
+            <h2>geydown-geyup</h2>
+          <input class="inputkey" placeholder="press." size="40" />
+          <p class="text"></p>
+        </div>
+      </div>
+   
+    <script src="event.js"></script>
+  </body>
+</html>
